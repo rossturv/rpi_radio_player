@@ -2,6 +2,8 @@
 
 This script auto-plays a radio stream on your Raspberry Pi and automatically switches to local backup audio files if the internet connection is lost for more than a minute. When the connection is restored, it resumes the stream. It is designed for robust, unattended operation and outputs audio over the 3.5mm headphone jack.
 
+A sample radio stream has been entered for testing purposes and the user 'radio' is used in the scripts, change as appropriate.
+
 ## Features
 - Auto-plays a specified radio stream on boot
 - Monitors internet connection and stream health
@@ -79,7 +81,7 @@ You should hear "Front Center" from your speakers/headphones.
 
 ## Troubleshooting
 - **No audio output:**
-  - Ensure the `radio` user is in the `audio` group:
+  - Ensure your user (`radio` shown in this example) is in the `audio` group:
     ```sh
     sudo usermod -aG audio radio
     sudo reboot
